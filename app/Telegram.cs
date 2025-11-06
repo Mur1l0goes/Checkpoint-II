@@ -1,19 +1,22 @@
-public class Telegram
+
+//(Usa tanto usuário quanto número de telefone, então podemos aceitar ambos)
+public class Telegram : ChannelBase
 {
-   public void EnviarMensagem(string numero, TextMessage message)
+    public override string Name => "Telegram";
+
+    public override void SendMessage(string destino, MessageBase message)
     {
-        Console.WriteLine($"Enviando menssagem de texto para o número {numero}");
-    } 
-   public void EnviarMensagem(string numero, TextMessage message)
-    {
-        Console.WriteLine($"Enviando foto para o número {foto}");
-    }
-   public void EnviarMensagem(string numero, TextMessage message)
-    {
-        Console.WriteLine($"Enviando video para o número {video}");
-    }
-   public void EnviarMensagem(string numero, TextMessage message)
-    {
-        Console.WriteLine($"Enviando arquivo para o número {arquivo}");
+        Console.WriteLine($"[Telegram] Enviando mensagem para {destino}");
+
+        if (message is VideoMessage video)
+            Console.WriteLine($"Vídeo: {video.File} ({video.Format}) - {video.Duration}s");
+        else if (message is PhotoMessage photo)
+            Console.WriteLine($"Foto: {photo.File} ({photo.Format})");
+        else if (message is FileMessage file)
+            Console.WriteLine($"Arquivo: {file.File} ({file.Format})");
+        else if (message is TextMessage text)
+            Console.WriteLine($"Texto: {text.Message}");
+
+        Console.WriteLine($"Data de envio: {message.SendAt}\n");
     }
 }

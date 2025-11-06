@@ -1,19 +1,13 @@
-public class Facebook
+
+//(Usam usuário como destino)
+public class Facebook : ChannelBase
 {
-   public void EnviarMensagem(string numero, TextMessage message)
+    public override string Name => "Facebook";
+
+    public override void SendMessage(string usuario, MessageBase message)
     {
-        Console.WriteLine($"Enviando menssagem de texto para o número {numero}");
-    } 
-   public void EnviarMensagem(string numero, TextMessage message)
-    {
-        Console.WriteLine($"Enviando foto para o número {foto}");
-    }
-   public void EnviarMensagem(string numero, TextMessage message)
-    {
-        Console.WriteLine($"Enviando video para o número {video}");
-    }
-   public void EnviarMensagem(string numero, TextMessage message)
-    {
-        Console.WriteLine($"Enviando arquivo para o número {arquivo}");
+        Console.WriteLine($"[Facebook] Enviando mensagem para @{usuario}");
+        Console.WriteLine($"Conteúdo: {message.Message}");
+        Console.WriteLine($"Data de envio: {message.SendAt}\n");
     }
 }

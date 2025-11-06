@@ -1,0 +1,15 @@
+/workspaces/Checkpoint-II/app/bin/Debug/net8.0/app
+/workspaces/Checkpoint-II/app/bin/Debug/net8.0/app.deps.json
+/workspaces/Checkpoint-II/app/bin/Debug/net8.0/app.runtimeconfig.json
+/workspaces/Checkpoint-II/app/bin/Debug/net8.0/app.dll
+/workspaces/Checkpoint-II/app/bin/Debug/net8.0/app.pdb
+/workspaces/Checkpoint-II/app/obj/Debug/net8.0/app.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Checkpoint-II/app/obj/Debug/net8.0/app.AssemblyInfoInputs.cache
+/workspaces/Checkpoint-II/app/obj/Debug/net8.0/app.AssemblyInfo.cs
+/workspaces/Checkpoint-II/app/obj/Debug/net8.0/app.csproj.CoreCompileInputs.cache
+/workspaces/Checkpoint-II/app/obj/Debug/net8.0/app.sourcelink.json
+/workspaces/Checkpoint-II/app/obj/Debug/net8.0/app.dll
+/workspaces/Checkpoint-II/app/obj/Debug/net8.0/refint/app.dll
+/workspaces/Checkpoint-II/app/obj/Debug/net8.0/app.pdb
+/workspaces/Checkpoint-II/app/obj/Debug/net8.0/app.genruntimeconfig.cache
+/workspaces/Checkpoint-II/app/obj/Debug/net8.0/ref/app.dll
